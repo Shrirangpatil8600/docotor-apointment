@@ -1,6 +1,6 @@
-# Interview Preparation & Project Guide: Doctor Appointment Booking System
+# Project Guide: Doctor Appointment Booking System
 
-Welcome! This document is a comprehensive guide to understanding, setting up, and presenting the **Doctor Appointment Booking System** project in a technical interview. It covers the project architecture, database design, module-level functionalities, runtime setup, and high-yield interview questions with detailed answers.
+Welcome! This document is a comprehensive guide to understanding, setting up, and deploying the **Doctor Appointment Booking System** project. It covers the project architecture, database design, module-level functionalities, runtime setup, and key technical concepts with detailed explanations.
 
 ---
 
@@ -233,9 +233,9 @@ con=DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb","root","you
 
 ---
 
-## 7. High-Yield Interview Questions & Answers
+## 7. Technical FAQ & Deep-Dive
 
-Be prepared to answer these questions during your technical interview:
+This section provides detailed answers to key technical design and operational questions about the system:
 
 ### Q1: Can you explain the architecture of this project?
 **Answer**:
@@ -290,4 +290,4 @@ Be prepared to answer these questions during your technical interview:
 > 4.  **Navigation Redirect**: If the status count is greater than zero, the controller forwards the request to `PatientViewAppointment.jsp`, where the updated schedules are re-fetched and rendered."
 
 ---
-*Good luck with your interview! Use this guide to study the project modules, architectural flow, and database design.*
+*Created by Shrirang Patil.*
