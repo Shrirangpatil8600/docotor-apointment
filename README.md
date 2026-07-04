@@ -1,4 +1,4 @@
-# Interview Preparation & Project Guide: Doctor Appointment Booking System
+
 Welcome! This document is a comprehensive guide to understanding, setting up, and presenting the **Doctor Appointment Booking System** project in a technical interview. It covers the project architecture, database design, module-level functionalities, runtime setup, and high-yield interview questions with detailed answers.
 ---
 ## 1. Project Overview
