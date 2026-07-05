@@ -121,9 +121,9 @@ DoctorAppointmentSystem/
 
 ## 5. Database Schema: Oracle vs. MySQL Configuration
 
-The project contains a [database.txt](file:///c:/Users/Gaurav%20Gawali/Documents/GitHub/docotor-apointment/DoctorAppointmentBooking-main/DoctorAppointmentSystem/WebContent/database.txt) file which was initially drafted for **Oracle Database** (using sequences like `patient`, `docseq`, `appoint` and Oracle-specific data types like `VARCHAR2`).
+The project contains a [database.txt](file:///c:/Users/Shrirang%20Patil/Documents/GitHub/docotor-apointment/DoctorAppointmentBooking-main/DoctorAppointmentSystem/WebContent/database.txt) file which was initially drafted for **Oracle Database** (using sequences like `patient`, `docseq`, `appoint` and Oracle-specific data types like `VARCHAR2`).
 
-However, the Java connection helper [ConnectionProvider.java](file:///c:/Users/Gaurav%20Gawali/Documents/GitHub/docotor-apointment/DoctorAppointmentBooking-main/DoctorAppointmentSystem/src/dba/ConnectionProvider.java) is configured for **MySQL** (using driver `com.mysql.cj.jdbc.Driver` on port 3306). 
+However, the Java connection helper [ConnectionProvider.java](file:///c:/Users/Shrirang%20Patil/Documents/GitHub/docotor-apointment/DoctorAppointmentBooking-main/DoctorAppointmentSystem/src/dba/ConnectionProvider.java) is configured for **MySQL** (using driver `com.mysql.cj.jdbc.Driver` on port 3306). 
 
 During JDBC execution, the Java DAO scripts omit the primary key column (e.g., `id` or `apid`) in their insert operations:
 *   *Patient Save Query*: `insert into Patients(name,dob,address,gender,contact,email,password) values(?,?,?,?,?,?,?)`
@@ -209,7 +209,7 @@ Follow these steps to deploy and run the project locally on your machine.
 3.  Run the MySQL DDL script provided in **Section 5** to create the tables.
 
 ### Step 3: Configure Database Settings in Code
-Navigate to [ConnectionProvider.java](file:///c:/Users/Gaurav%20Gawali/Documents/GitHub/docotor-apointment/DoctorAppointmentBooking-main/DoctorAppointmentSystem/src/dba/ConnectionProvider.java) and verify the connection string, user, and password:
+Navigate to [ConnectionProvider.java](file:///c:/Users/Shrirang%20Patil/Documents/GitHub/docotor-apointment/DoctorAppointmentBooking-main/DoctorAppointmentSystem/src/dba/ConnectionProvider.java) and verify the connection string, user, and password:
 ```java
 Class.forName("com.mysql.cj.jdbc.Driver");  
 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb","root","your_mysql_password");  
