@@ -264,4 +264,4 @@ UI Request: The patient selects a doctor and fills out the date/symptoms on Pati
 Controller Action: The AppointmentReg servlet extracts parameters (name, email, contact, age, day, specialty, description, docid) from the request. It parses them and wraps the data inside an AppointmentBean model object.
 DAO Execution: The servlet passes the bean to the static save() method in AppointmentDao. The DAO obtains a connection from ConnectionProvider.getConnection(), runs a prepared statement insert command, executes executeUpdate(), and returns the query status count.
 Navigation Redirect: If the status count is greater than zero, the controller forwards the request to PatientViewAppointment.jsp, where the updated schedules are re-fetched and rendered."
-Created by Shrirang Patil.dy the project modules, architectural flow, and database design.*
+*Created by Shrirang Patil.*
